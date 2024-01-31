@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- TW Elements styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+</head>
+<body class="transition ease-in-out">
+    <div class="bg-fixed w-full h-max p-6 bg-green-400 flex flex-col md:flex-row justify-between items-center">
+        <div class="font-bold">Gem Coins</div>
+        <div class="flex flex-wrap pt-6 md:pt-0">
+            <p class="w-24 cursor-pointer text-gray-700 transition hover:text-white hover:font-bold text-center">Home</p>
+            <p class="w-24 cursor-pointer text-gray-700 transition hover:text-white hover:font-bold text-center">About Us</p>
+            <p class="w-24 cursor-pointer text-gray-700 transition hover:text-white hover:font-bold text-center">Services</p>
+            <p class="w-24 cursor-pointer text-gray-700 transition hover:text-white hover:font-bold text-center">Faqs</p>
+            <p class="w-24 cursor-pointer text-gray-700 transition hover:text-white hover:font-bold text-center">Contact Us</p>
+        </div>
+    </div>
+
+
+    <!-- Flowing Design  -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+        "symbols": [
+        {
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "Bitcoin"
+        },
+        {
+            "proName": "BITSTAMP:ETHUSD",
+            "title": "Ethereum"
+        },
+        {
+            "description": "Ripple",
+            "proName": "BITSTAMP:XRPUSD"
+        },
+        {
+            "description": "Solana",
+            "proName": "BINANCE:SOLUSD"
+        },
+        {
+            "description": "Litecoin",
+            "proName": "BINANCE:LTCUSDT"
+        }
+        ],
+        "showSymbolLogo": true,
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "colorTheme": "light",
+        "locale": "en"
+    }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+    <!-- Hero Section -->
+    <div class="p-6 flex  flex-wrap justify-center items-center">
+        <div class="w-full md:w-2/5 p-6 flex md:grid flex-col justify-center items-center">
+            <div class="py-6 text-center md:text-left">
+                <p class="text-4xl font-bold my-3">We'll assist you in making informed decisions.</p>
+                <p>We, as professionals in blockchain technology, are here to educate and promote potential cryptocurrency coins and projects. Together, we can delve into the world of blockchain, providing you with valuable insights and fostering awareness about promising crypto-currency initiatives.</p>
+            </div>
+            <button class="w-52 md:w-[170px] rounded-full bg-green-400 p-4 text-white font-bold">Get Started</button>
+        </div>
+        <div class="w-full md:max-w-[550px] h-80 bg-gray-300 rounded-lg overflow-hidden">
+            <!-- TradingView Widget BEGIN -->
+            <div class="h-full w-full rounded-lg tradingview-widget-container">
+                <div id="h-full w-full tradingview"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                new TradingView.widget(
+                {
+                "autosize": true,
+                "symbol": "COINBASE:BTCUSD",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "Dark",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "rgba(60, 60, 60, 1)",
+                "enable_publishing": false,
+                "hide_legend": true,
+                "save_image": false,
+                "container_id": "tradingview",
+                "overrides": {
+                //	supported values: large, medium, small, tiny
+                "volumePaneSize": "large",
+            
+                //	fonts available in text editors (i.e., in `Text` drawing tool properties dialog)
+                "editorFontsList": ['Verdana', 'Courier New', 'Times New Roman', 'Arial'],
+            
+                "paneProperties.background": "#ffffff",
+                "paneProperties.vertGridProperties.color": "#fbfbfb",
+                // "paneProperties.vertGridProperties.style": "LINESTYLE_SOLID",
+                "paneProperties.horzGridProperties.color": "#fbfbfb",
+                // "paneProperties.horzGridProperties.style": "LINESTYLE_SOLID",
+                "paneProperties.crossHairProperties.color": "#989898",
+                "paneProperties.crossHairProperties.width": 1,
+                // "paneProperties.crossHairProperties.style": "LINESTYLE_DASHED",
+                "paneProperties.background": "#000",
+                "paneProperties.vertGridProperties.color": "#484F65",
+                "paneProperties.horzGridProperties.color": "#484F65",
+                "symbolWatermarkProperties.transparency": 90,
+                "scalesProperties.textColor" : "#AAA",
+                "mainSeriesProperties.barStyle.upColor": "rgba(28,199,114,0.1)",
+                "mainSeriesProperties.barStyle.downColor": "#EC5660",
+                "mainSeriesProperties.candleStyle.upColor": "#16AF63",
+                "mainSeriesProperties.candleStyle.downColor": '#7f323f',
+                "mainSeriesProperties.candleStyle.drawWick": true,
+                "mainSeriesProperties.candleStyle.drawBorder": true,
+                "mainSeriesProperties.candleStyle.borderColor": "#378658",
+                "mainSeriesProperties.candleStyle.borderUpColor": "rgba(28,199,114,1)",
+                "mainSeriesProperties.candleStyle.borderDownColor": "#5b1a13",
+                "mainSeriesProperties.candleStyle.wickUpColor": '#1CC772',
+                "mainSeriesProperties.candleStyle.wickDownColor": '#7f323f',
+                }
+            }
+                );
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+    </div>
+
+    <!-- Who we Are -->
+    <div class="container my-24 mx-auto md:px-6">
+        <!-- Section: Design Block -->
+        <section class="mb-32 text-center">
+        <div class="flex justify-center">
+            <div class="max-w-[700px] text-center">
+            <h2 class="mb-6 text-center text-3xl font-bold">
+                Who we <u class="text-green-400 dark:text-green-400">Are</u>
+            </h2>
+            <p class="mb-16 text-black">
+                In this ever-changing world we live in, new advancements and developments are constantly happening in the technology sector. Every new day brings innovation to the tech world, and if you're not up to date, you might miss out on important information. In fact, if you've been following the news or spending adequate time on the internet, you must have heard the terms Cryptocurrency, Bitcoin, or blockchain by now. <br><br>
+                If you're also eager to understand what this hype is all about, which is keeping everyone on their toes, here's an in-depth exploration on blockchain technology. I'll assist you in comprehending everything you need to know to get started in the crypto world.
+            </p>
+            </div>
+        </div>
+    
+        <h2 class="mb-6 text-center text-3xl font-bold">
+            Our <u class="text-green-400 dark:text-green-400">Services</u>
+        </h2>
+        <div class="grid gap-x-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-12">
+            <div class="mb-12 lg:mb-0">
+            <div class="mb-6 inline-block rounded-full bg-primary-100 p-4 text-green-400 shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                </svg>
+            </div>
+            <h5 class="mb-4 text-lg font-bold">Financial Education</h5>
+            <p class="text-black  ">
+                We educate you about new technology in the blockchain world. Together, we research potential coins and guide you on how to buy and when to buy.
+            </p>
+            </div>
+    
+            <div class="mb-12 lg:mb-0">
+            <div class="mb-6 inline-block rounded-full bg-primary-100 p-4 text-green-400 shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                </svg>
+            </div>
+            <h5 class="mb-4 text-lg font-bold">Investment Guide</h5>
+            <p class="text-black  ">
+                Our team of professional blockchain technologists will collaborate with you on how to invest your funds in the blockchain world.
+            </p>
+            </div>
+    
+            <div class="mb-12 md:mb-0">
+            <div class="mb-6 inline-block rounded-full bg-primary-100 p-4 text-green-400 shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                </svg>
+            </div>
+            <h5 class="mb-4 text-lg font-bold">Market Analysis and Trends</h5>
+            <p class="text-black  ">
+                Stay ahead of the curve with our regular market analysis and trend reports. We keep you informed about the latest developments.
+            </p>
+            </div>
+    
+            <div class="mb-12 md:mb-0">
+            <div class="mb-6 inline-block rounded-full bg-primary-100 p-4 text-green-400 shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                </svg>
+            </div>
+            <h5 class="mb-4 text-lg font-bold">Portfolio Diversification Strategies</h5>
+            <p class="text-black  ">
+                We help you navigate various cryptocurrencies, reducing risk and maximizing potential returns in the dynamic blockchain market.
+            </p>
+            </div>
+        </div>
+
+        <button class="w-52 md:w-[170px] rounded-full bg-green-400 p-4 text-white font-bold my-24">Learn More</button>
+        </section>
+        <!-- Section: Design Block -->
+    </div>
+
+
+    <!-- Faqs -->
+    <div class="container my-12 mx-auto md:px-6 xl:px-24">
+        <!-- Section: Design Block -->
+        <section class="mb-32">
+        <h2 class="mb-2 pl-6 text-3xl font-bold">Frequently asked questions</h2>
+        <p class="mb-6 pl-6">These are questions we predicated that will be asked, if you are not satisfy with the list of question below, you should feel free to contact us. </p>
+    
+        <div id="accordionFlushExample">
+            <div class="rounded-none border border-t-0 border-l-0 border-r-0 border-neutral-200">
+                <h2 class="mb-0" id="flush-headingOne">
+                    <button
+                    class="group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-green-600 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:text-green-600"
+                    type="button" data-te-collapse-init data-te-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    Anim pariatur cliche reprehenderit?
+                    <span
+                        class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#8FAEE0] dark:group-[[data-te-collapse-collapsed]]:fill-[#eee]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="!visible border-0" data-te-collapse-item data-te-collapse-show
+                    aria-labelledby="flush-headingOne" data-te-parent="#accordionFlushExample">
+                    <div class="py-4 px-5">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa
+                    nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                    put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                    wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably
+                    haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-none border border-l-0 border-r-0 border-t-0 border-neutral-200">
+                <h2 class="mb-0" id="flush-headingTwo">
+                    <button
+                    class="group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-green-600 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:text-green-600"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseTwo"
+                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Non cupidatat skateboard dolor brunch?
+                    <span
+                        class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#8FAEE0] dark:group-[[data-te-collapse-collapsed]]:fill-[#eee]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="!visible hidden border-0" data-te-collapse-item
+                    aria-labelledby="flush-headingTwo" data-te-parent="#accordionFlushExample">
+                    <div class="py-4 px-5">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa
+                    nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                    put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                    wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably
+                    haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-none border border-l-0 border-r-0 border-b-0 border-t-0 border-neutral-200">
+                <h2 class="mb-0" id="flush-headingThree">
+                    <button
+                    class="group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-green-600 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:text-green-600"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseThree"
+                    aria-expanded="false" aria-controls="flush-collapseThree">
+                    Praesentium voluptatibus temporibus consequatur non aspernatur?
+                    <span
+                        class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#8FAEE0] dark:group-[[data-te-collapse-collapsed]]:fill-[#eee]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="!visible hidden rounded-b-lg" data-te-collapse-item
+                    aria-labelledby="flush-headingThree" data-te-parent="#accordionFlushExample">
+                    <div class="py-4 px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    optio vitae inventore autem fugiat rerum sed laborum. Natus
+                    recusandae laboriosam quos pariatur corrupti id dignissimos
+                    deserunt, praesentium voluptatibus temporibus consequatur non
+                    aspernatur laborum rerum nemo dolorem libero inventore provident
+                    exercitationem sunt totam aperiam. Facere sunt quos commodi
+                    obcaecati temporibus alias amet! Quam quisquam laboriosam quae
+                    repellendus non cum adipisci odio?
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-none border border-l-0 border-r-0 border-b-0 border-t-0 border-neutral-200">
+                <h2 class="mb-0" id="flush-headingFour">
+                    <button
+                    class="group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-green-600 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:text-green-600"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseFour"
+                    aria-expanded="false" aria-controls="flush-collapseFour">
+                    Praesentium voluptatibus temporibus consequatur non aspernatur?
+                    <span
+                        class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#8FAEE0] dark:group-[[data-te-collapse-collapsed]]:fill-[#eee]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="!visible hidden rounded-b-lg" data-te-collapse-item
+                    aria-labelledby="flush-headingFour" data-te-parent="#accordionFlushExample">
+                    <div class="py-4 px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    optio vitae inventore autem fugiat rerum sed laborum. Natus
+                    recusandae laboriosam quos pariatur corrupti id dignissimos
+                    deserunt, praesentium voluptatibus temporibus consequatur non
+                    aspernatur laborum rerum nemo dolorem libero inventore provident
+                    exercitationem sunt totam aperiam. Facere sunt quos commodi
+                    obcaecati temporibus alias amet! Quam quisquam laboriosam quae
+                    repellendus non cum adipisci odio?
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-none border border-l-0 border-r-0 border-b-0 border-t-0 border-neutral-200">
+                <h2 class="mb-0" id="flush-headingFive">
+                    <button
+                    class="group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-green-600 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:text-green-600"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseFive"
+                    aria-expanded="false" aria-controls="flush-collapseFive">
+                    Praesentium voluptatibus temporibus consequatur non aspernatur?
+                    <span
+                        class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#8FAEE0] dark:group-[[data-te-collapse-collapsed]]:fill-[#eee]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="!visible hidden rounded-b-lg" data-te-collapse-item
+                    aria-labelledby="flush-headingFive" data-te-parent="#accordionFlushExample">
+                    <div class="py-4 px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    optio vitae inventore autem fugiat rerum sed laborum. Natus
+                    recusandae laboriosam quos pariatur corrupti id dignissimos
+                    deserunt, praesentium voluptatibus temporibus consequatur non
+                    aspernatur laborum rerum nemo dolorem libero inventore provident
+                    exercitationem sunt totam aperiam. Facere sunt quos commodi
+                    obcaecati temporibus alias amet! Quam quisquam laboriosam quae
+                    repellendus non cum adipisci odio?
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-none border border-l-0 border-r-0 border-b-0 border-t-0 border-neutral-200">
+                <h2 class="mb-0" id="flush-headingSix">
+                    <button
+                    class="group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-green-600 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:text-green-600"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseSix"
+                    aria-expanded="false" aria-controls="flush-collapseSix">
+                    Praesentium voluptatibus temporibus consequatur non aspernatur?
+                    <span
+                        class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#8FAEE0] dark:group-[[data-te-collapse-collapsed]]:fill-[#eee]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="!visible hidden rounded-b-lg" data-te-collapse-item
+                    aria-labelledby="flush-headingSix" data-te-parent="#accordionFlushExample">
+                    <div class="py-4 px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    optio vitae inventore autem fugiat rerum sed laborum. Natus
+                    recusandae laboriosam quos pariatur corrupti id dignissimos
+                    deserunt, praesentium voluptatibus temporibus consequatur non
+                    aspernatur laborum rerum nemo dolorem libero inventore provident
+                    exercitationem sunt totam aperiam. Facere sunt quos commodi
+                    obcaecati temporibus alias amet! Quam quisquam laboriosam quae
+                    repellendus non cum adipisci odio?
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-none border border-l-0 border-r-0 border-b-0 border-t-0 border-neutral-200">
+                <h2 class="mb-0" id="flush-headingSeven">
+                    <button
+                    class="group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-green-600 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:text-green-600"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseSeven"
+                    aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Praesentium voluptatibus temporibus consequatur non aspernatur?
+                    <span
+                        class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#8FAEE0] dark:group-[[data-te-collapse-collapsed]]:fill-[#eee]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseSeven" class="!visible hidden rounded-b-lg" data-te-collapse-item
+                    aria-labelledby="flush-headingSeven" data-te-parent="#accordionFlushExample">
+                    <div class="py-4 px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    optio vitae inventore autem fugiat rerum sed laborum. Natus
+                    recusandae laboriosam quos pariatur corrupti id dignissimos
+                    deserunt, praesentium voluptatibus temporibus consequatur non
+                    aspernatur laborum rerum nemo dolorem libero inventore provident
+                    exercitationem sunt totam aperiam. Facere sunt quos commodi
+                    obcaecati temporibus alias amet! Quam quisquam laboriosam quae
+                    repellendus non cum adipisci odio?
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-none border border-l-0 border-r-0 border-b-0 border-t-0 border-neutral-200">
+                <h2 class="mb-0" id="flush-headingEight">
+                    <button
+                    class="group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-green-600 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:text-green-600"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseEight"
+                    aria-expanded="false" aria-controls="flush-collapseEight">
+                    Praesentium voluptatibus temporibus consequatur non aspernatur?
+                    <span
+                        class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#8FAEE0] dark:group-[[data-te-collapse-collapsed]]:fill-[#eee]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseEight" class="!visible hidden rounded-b-lg" data-te-collapse-item
+                    aria-labelledby="flush-headingEight" data-te-parent="#accordionFlushExample">
+                    <div class="py-4 px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    optio vitae inventore autem fugiat rerum sed laborum. Natus
+                    recusandae laboriosam quos pariatur corrupti id dignissimos
+                    deserunt, praesentium voluptatibus temporibus consequatur non
+                    aspernatur laborum rerum nemo dolorem libero inventore provident
+                    exercitationem sunt totam aperiam. Facere sunt quos commodi
+                    obcaecati temporibus alias amet! Quam quisquam laboriosam quae
+                    repellendus non cum adipisci odio?
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-none border border-l-0 border-r-0 border-b-0 border-t-0 border-neutral-200">
+                <h2 class="mb-0" id="flush-headingNine">
+                    <button
+                    class="group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-green-600 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:text-green-600"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseNine"
+                    aria-expanded="false" aria-controls="flush-collapseNine">
+                    Praesentium voluptatibus temporibus consequatur non aspernatur?
+                    <span
+                        class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#8FAEE0] dark:group-[[data-te-collapse-collapsed]]:fill-[#eee]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseNine" class="!visible hidden rounded-b-lg" data-te-collapse-item
+                    aria-labelledby="flush-headingNine" data-te-parent="#accordionFlushExample">
+                    <div class="py-4 px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    optio vitae inventore autem fugiat rerum sed laborum. Natus
+                    recusandae laboriosam quos pariatur corrupti id dignissimos
+                    deserunt, praesentium voluptatibus temporibus consequatur non
+                    aspernatur laborum rerum nemo dolorem libero inventore provident
+                    exercitationem sunt totam aperiam. Facere sunt quos commodi
+                    obcaecati temporibus alias amet! Quam quisquam laboriosam quae
+                    repellendus non cum adipisci odio?
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-none border border-l-0 border-r-0 border-b-0 border-t-0 border-neutral-200">
+                <h2 class="mb-0" id="flush-headingTen">
+                    <button
+                    class="group relative flex w-full items-center rounded-none border-0 py-4 px-5 text-left text-base font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-green-600 [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:text-green-600"
+                    type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#flush-collapseTen"
+                    aria-expanded="false" aria-controls="flush-collapseTen">
+                    Praesentium voluptatibus temporibus consequatur non aspernatur?
+                    <span
+                        class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#8FAEE0] dark:group-[[data-te-collapse-collapsed]]:fill-[#eee]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
+                    </button>
+                </h2>
+                <div id="flush-collapseTen" class="!visible hidden rounded-b-lg" data-te-collapse-item
+                    aria-labelledby="flush-headingTen" data-te-parent="#accordionFlushExample">
+                    <div class="py-4 px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    optio vitae inventore autem fugiat rerum sed laborum. Natus
+                    recusandae laboriosam quos pariatur corrupti id dignissimos
+                    deserunt, praesentium voluptatibus temporibus consequatur non
+                    aspernatur laborum rerum nemo dolorem libero inventore provident
+                    exercitationem sunt totam aperiam. Facere sunt quos commodi
+                    obcaecati temporibus alias amet! Quam quisquam laboriosam quae
+                    repellendus non cum adipisci odio?
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Section: Design Block -->
+    </div>
+
+    <!-- text and Images -->
+    <div class="p-6 flex flex-wrap justify-center items-center">
+        <div class="w-full md:w-2/5 p-6 flex md:grid flex-col justify-center items-center">
+            <div class="py-6 text-center md:text-left">
+                <p class="text-4xl font-bold my-3">It's Because of Your Financial Dreams</p>
+                <p>Let's fulfill your financial dreams using blockchain technology! We're here to guide you, offering personalized strategies, education, secure wallet management, market insights, and engaging workshops. Together, we'll navigate the world of blockchain, making your financial goals a reality.</p>
+            </div>
+            <button class="w-52 md:w-[170px] rounded-full bg-green-400 p-4 text-white font-bold">Get Started</button>
+        </div>
+        <div class="w-full md:max-w-[550px] bg-gray-300 rounded overflow-hidden rounded-lg">
+            <div id="carouselExampleControls" class="relative" data-te-carousel-init data-te-ride="carousel">
+                <!--Carousel items-->
+                <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                <!--First item-->
+                <div
+                    class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item
+                    data-te-carousel-active>
+                    <img
+                    src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+                    class="block w-full"
+                    alt="Wild Landscape" />
+                </div>
+                <!--Second item-->
+                <div
+                    class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item>
+                    <img
+                    src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+                    class="block w-full"
+                    alt="Camera" />
+                </div>
+                <!--Third item-->
+                <div
+                    class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item>
+                    <img
+                    src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+                    class="block w-full"
+                    alt="Exotic Fruits" />
+                </div>
+                </div>
+            
+                <!--Carousel controls - prev item-->
+                <button class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                type="button"
+                data-te-target="#carouselExampleControls"
+                data-te-slide="prev">
+                <span class="inline-block h-8 w-8">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </span>
+                <span
+                    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                    >Previous</span
+                >
+                </button>
+                <!--Carousel controls - next item-->
+                <button
+                class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                type="button"
+                data-te-target="#carouselExampleControls"
+                data-te-slide="next">
+                <span class="inline-block h-8 w-8">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </span>
+                <span
+                    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                    >Next</span
+                >
+                </button>
+                </div>
+        </div>
+    </div>
+
+    <!-- Priceing Plans -->
+    <div class="container my-24 mx-auto md:px-6">
+        <!-- Section: Design Block -->
+        <section class="mb-32">
+        <style>
+            .background-radial-gradient {
+            background-color: hsl( 102, 75%, 35%);
+            background-image: radial-gradient(650px circle at 0% 0%,
+                hsl( 102, 75%, 35%) 15%,
+                hsl( 102, 75%, 30%) 35%,
+                hsl( 102, 75%, 20%) 75%,
+                hsl( 102, 75%, 19%) 80%,
+                transparent 100%),
+                radial-gradient(1250px circle at 100% 100%,
+                hsl(102, 75%, 45%) 15%,
+                hsl(102, 75%, 30%) 35%,
+                hsl(102, 75%, 20%) 75%,
+                hsl(102, 75%, 19%) 80%,
+                transparent 100%);
+            }
+        </style>
+    
+        <div class="background-radial-gradient text-center text-white lg:h-[400px] h-[300px] lg:pt-[80px] pt-[55px]">
+            <h2 class="mb-12 text-center text-3xl font-bold">Pricing</h2>
+        </div>
+    
+        <div class="grid px-6 md:px-12 lg:grid-cols-3 xl:px-32" style="margin-top: -200px">
+            <div class="p-0 py-12">
+            <div
+                class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border lg:rounded-tr-none lg:rounded-br-none">
+                <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center dark:border-opacity-10">
+                <p class="mb-4 text-sm uppercase">
+                    <strong>Basic</strong>
+                </p>
+                <h3 class="mb-6 text-3xl">
+                    <strong>$ 129</strong>
+                    <small class="text-base text-neutral-500 ">/year</small>
+                </h3>
+    
+                <button type="button"
+                    class="inline-block w-full rounded bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-green-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-green-100 focus:outline-none focus:ring-0 active:bg-green-200"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Buy
+                </button>
+                </div>
+                <div class="p-6">
+                <ol class="list-inside">
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Unlimited
+                    updates
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Git
+                    repository
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>npm
+                    installation
+                    </li>
+                </ol>
+                </div>
+            </div>
+            </div>
+    
+            <div>
+            <div
+                class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] "
+                style="z-index: 1">
+                <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center dark:border-opacity-10">
+                <p class="mb-4 text-sm uppercase">
+                    <strong>Enterprise</strong>
+                </p>
+                <h3 class="mb-6 text-3xl">
+                    <strong>$ 499</strong>
+                    <small class="text-base text-neutral-500 ">/year</small>
+                </h3>
+    
+                <button type="button"
+                    class="inline-block w-full rounded bg-green-400 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-green-600 hover:shadow-[0_8px_9px_-4px_rgba( 68, 143, 36,0.3),0_4px_18px_0_rgba( 68, 143, 36 ,0.2)] focus:bg-green-600 focus:shadow-[0_8px_9px_-4px_rgba( 68, 143, 36,0.3),0_4px_18px_0_rgba( 68, 143, 36,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba( 68, 143, 36,0.3),0_4px_18px_0_rgba( 68, 143, 36,0.2)]"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Buy
+                </button>
+                </div>
+                <div class="p-6">
+                <ol class="list-inside">
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Unlimited
+                    updates
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Git
+                    repository
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>npm
+                    installation
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Code examples
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Premium
+                    snippets
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Premium
+                    support
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Drag&amp;Drop
+                    builder
+                    </li>
+                </ol>
+                </div>
+            </div>
+            </div>
+    
+            <div class="py-12">
+            <div
+                class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  lg:rounded-tl-none lg:rounded-bl-none">
+                <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center dark:border-opacity-10">
+                <p class="mb-4 text-sm uppercase">
+                    <strong>Advanced</strong>
+                </p>
+                <h3 class="mb-6 text-3xl">
+                    <strong>$ 299</strong>
+                    <small class="text-base text-neutral-500">/year</small>
+                </h3>
+    
+                <button type="button"
+                    class="inline-block w-full rounded bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-green-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-green-100 focus:outline-none focus:ring-0 active:bg-green-200"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    Buy
+                </button>
+                </div>
+                <div class="p-6">
+                <ol class="list-inside">
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Unlimited
+                    updates
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Git
+                    repository
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>npm
+                    installation
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Code examples
+                    </li>
+                    <li class="mb-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Premium
+                    snippets
+                    </li>
+                </ol>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!-- Section: Design Block -->
+    </div>  
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+</html>
