@@ -10,3 +10,18 @@ const clickTo = (amtsm, amtbg, amtxl) =>{
         }
     }
 }
+
+
+var close = document.querySelector("#close")
+    var form = document.querySelector("#form")
+    var payNow = document.querySelectorAll("#payNow")
+
+    close.addEventListener("click", ()=>{
+        form.classList.toggle("hidden")
+    })
+
+    payNow.forEach(nw => {
+        nw.addEventListener("click", ()=>{
+            form.classList.toggle("hidden")
+        })
+    });

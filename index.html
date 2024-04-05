@@ -8,16 +8,34 @@
     <link rel="stylesheet" href="style.css">
     <!-- TW Elements styles-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .background-radial-gradient {
+        background-color: hsl( 102, 75%, 35%);
+        background-image: radial-gradient(650px circle at 0% 0%,
+            hsl( 102, 75%, 35%) 15%,
+            hsl( 102, 75%, 30%) 35%,
+            hsl( 102, 75%, 20%) 75%,
+            hsl( 102, 75%, 19%) 80%,
+            transparent 100%),
+            radial-gradient(1250px circle at 100% 100%,
+            hsl(102, 75%, 45%) 15%,
+            hsl(102, 75%, 30%) 35%,
+            hsl(102, 75%, 20%) 75%,
+            hsl(102, 75%, 19%) 80%,
+            transparent 100%);
+        }
+    </style>
 </head>
 <body class="transition ease-in-out">
-    <div class="bg-fixed w-full h-max p-6 bg-green-400 flex flex-col md:flex-row justify-between items-center">
-        <div class="font-bold">Gem Coins</div>
+    <div class="bg-fixed w-full h-max p-6 background-radial-gradient flex flex-col md:flex-row justify-between items-center text-white">
+        <div class="font-bold">Crypto Gems</div>
         <div class="flex flex-wrap justify-center item-center pt-6 md:pt-0">
             <p class="hidden w-24 cursor-pointer texamtxlt-gray-700 transition hover:text-white hover:font-bold text-center">Home</p>
-            <p onclick="clickTo(1000, 700, 500)" class="w-24 cursor-pointer text-gray-700 transition hover:text-white hover:font-bold text-center">About Us</p>
-            <p onclick="clickTo(1350, 1050, 850)" class="w-24 cursor-pointer text-gray-700 transition hover:text-white hover:font-bold text-center">Services</p>
-            <p onclick="clickTo(2500, 1600, 1500)" class="w-24 cursor-pointer text-gray-700 transition hover:text-white hover:font-bold text-center">Faqs</p>
-            <p class="w-24 cursor-pointer text-gray-700 transition hover:text-white hover:font-bold text-center">Contact Us</p>
+            <p onclick="clickTo(1000, 700, 500)" class="w-24 cursor-pointer transition hover:font-bold text-center">About Us</p>
+            <p onclick="clickTo(1350, 1050, 850)" class="w-24 cursor-pointer transition hover:font-bold text-center">Services</p>
+            <p onclick="clickTo(2500, 1600, 1500)" class="w-24 cursor-pointer transition hover:font-bold text-center">Faqs</p>
+            <p class="hidden w-24 cursor-pointer transition hover:font-bold text-center">Contact Us</p>
         </div>
     </div>
 
@@ -67,7 +85,7 @@
                 <p class="text-4xl font-bold my-3">We'll assist you in making informed decisions.</p>
                 <p>We, as professionals in blockchain technology, are here to educate and promote potential cryptocurrency coins and projects. Together, we can delve into the world of blockchain, providing you with valuable insights and fostering awareness about promising crypto-currency initiatives.</p>
             </div>
-            <button class="w-52 md:w-[170px] rounded-full bg-green-400 p-4 text-white font-bold">Get Started</button>
+            <button id="payNow" class="w-52 md:w-[170px] rounded-full background-radial-gradient p-4 text-white font-bold">Get Started</button>
         </div>
         <div class="w-full md:max-w-[550px] h-80 bg-gray-300 rounded-lg overflow-hidden">
             <!-- TradingView Widget BEGIN -->
@@ -206,7 +224,7 @@
             </div>
         </div>
 
-        <button class="w-52 md:w-[170px] rounded-full bg-green-400 p-4 text-white font-bold my-24">Learn More</button>
+        <button id="payNow" class="w-52 md:w-[170px] rounded-full background-radial-gradient p-4 text-white font-bold my-24">Learn More</button>
         </section>
         <!-- Section: Design Block -->
     </div>
@@ -691,7 +709,7 @@
                 <p class="text-4xl font-bold my-3">It's Because of Your Financial Dreams</p>
                 <p>Let's fulfill your financial dreams using blockchain technology! We're here to guide you, offering personalized strategies, education, secure wallet management, market insights, and engaging workshops. Together, we'll navigate the world of blockchain, making your financial goals a reality.</p>
             </div>
-            <button class="w-52 md:w-[170px] rounded-full bg-green-400 p-4 text-white font-bold">Get Started</button>
+            <button id="payNow" class="w-52 md:w-[170px] rounded-full background-radial-gradient p-4 text-white font-bold">Get Started</button>
         </div>
         <div class="w-full md:max-w-[550px] bg-gray-300 rounded overflow-hidden rounded-lg">
             <div id="carouselExampleControls" class="relative" data-te-carousel-init data-te-ride="carousel">
@@ -703,7 +721,7 @@
                     data-te-carousel-item
                     data-te-carousel-active>
                     <img
-                    src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+                    src="assets/inv1.jpg"
                     class="block w-full"
                     alt="Wild Landscape" />
                 </div>
@@ -712,7 +730,7 @@
                     class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                     data-te-carousel-item>
                     <img
-                    src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+                    src="assets/inv2.jpg"
                     class="block w-full"
                     alt="Camera" />
                 </div>
@@ -721,7 +739,7 @@
                     class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                     data-te-carousel-item>
                     <img
-                    src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+                    src="assets/inv3.jpg"
                     class="block w-full"
                     alt="Exotic Fruits" />
                 </div>
@@ -784,24 +802,6 @@
     <div class="container my-24 mx-auto md:px-6">
         <!-- Section: Design Block -->
         <section class="mb-20">
-        <style>
-            .background-radial-gradient {
-            background-color: hsl( 102, 75%, 35%);
-            background-image: radial-gradient(650px circle at 0% 0%,
-                hsl( 102, 75%, 35%) 15%,
-                hsl( 102, 75%, 30%) 35%,
-                hsl( 102, 75%, 20%) 75%,
-                hsl( 102, 75%, 19%) 80%,
-                transparent 100%),
-                radial-gradient(1250px circle at 100% 100%,
-                hsl(102, 75%, 45%) 15%,
-                hsl(102, 75%, 30%) 35%,
-                hsl(102, 75%, 20%) 75%,
-                hsl(102, 75%, 19%) 80%,
-                transparent 100%);
-            }
-        </style>
-    
         <div class="background-radial-gradient text-center text-white lg:h-[400px] h-[300px] lg:pt-[80px] pt-[55px]">
             <h2 class="mb-12 text-center text-3xl font-bold">Pricing</h2>
         </div>
@@ -815,11 +815,11 @@
                     <strong>Basic</strong>
                 </p>
                 <h3 class="mb-6 text-3xl">
-                    <strong>$ 129</strong>
-                    <small class="text-base text-neutral-500 ">/year</small>
+                    <strong>$ 50</strong>
+                    <small class="text-base text-neutral-500">One time</small>
                 </h3>
     
-                <button type="button"
+                <button id="payNow" type="button"
                     class="inline-block w-full rounded bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-green-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-green-100 focus:outline-none focus:ring-0 active:bg-green-200"
                     data-te-ripple-init data-te-ripple-color="light">
                     Buy
@@ -836,14 +836,12 @@
                     <li class="mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Git
-                    repository
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>5 Gem Coins 
                     </li>
                     <li class="mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>npm
-                    installation
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Portfolio Diversification
                     </li>
                 </ol>
                 </div>
@@ -859,11 +857,11 @@
                     <strong>Enterprise</strong>
                 </p>
                 <h3 class="mb-6 text-3xl">
-                    <strong>$ 499</strong>
-                    <small class="text-base text-neutral-500 ">/year</small>
+                    <strong>$ 300</strong>
+                    <small class="text-base text-neutral-500 ">One time</small>
                 </h3>
     
-                <button type="button"
+                <button id="payNow" type="button"
                     class="inline-block w-full rounded bg-green-400 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-green-600 hover:shadow-[0_8px_9px_-4px_rgba( 68, 143, 36,0.3),0_4px_18px_0_rgba( 68, 143, 36 ,0.2)] focus:bg-green-600 focus:shadow-[0_8px_9px_-4px_rgba( 68, 143, 36,0.3),0_4px_18px_0_rgba( 68, 143, 36,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba( 68, 143, 36,0.3),0_4px_18px_0_rgba( 68, 143, 36,0.2)]"
                     data-te-ripple-init data-te-ripple-color="light">
                     Buy
@@ -880,33 +878,29 @@
                     <li class="mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Git
-                    repository
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Unlimited Gem Coins 
                     </li>
                     <li class="mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>npm
-                    installation
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Portfolio Diversification
                     </li>
                     <li class="mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Code examples
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Telegram Channel
                     </li>
                     <li class="mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Premium
-                    snippets
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Learn to Trade
                     </li>
                     <li class="mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Premium
-                    support
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Long term Premium support
                     </li>
-                    <li class="mb-4 flex">
+                    <li class="hidden  mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Drag&amp;Drop
@@ -925,11 +919,11 @@
                     <strong>Advanced</strong>
                 </p>
                 <h3 class="mb-6 text-3xl">
-                    <strong>$ 299</strong>
-                    <small class="text-base text-neutral-500">/year</small>
+                    <strong>$ 150</strong>
+                    <small class="text-base text-neutral-500">One time</small>
                 </h3>
     
-                <button type="button"
+                <button id="payNow" type="button"
                     class="inline-block w-full rounded bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-green-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-green-100 focus:outline-none focus:ring-0 active:bg-green-200"
                     data-te-ripple-init data-te-ripple-color="light">
                     Buy
@@ -946,21 +940,19 @@
                     <li class="mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Git
-                    repository
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>15 Gem coins
                     </li>
                     <li class="mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>npm
-                    installation
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Portfolio Diversification
                     </li>
                     <li class="mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Code examples
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Telegram Channel
                     </li>
-                    <li class="mb-4 flex">
+                    <li class="hidden mb-4 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                         stroke="currentColor" class="mr-3 h-5 w-5 text-green-600 dark:text-primary-400">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Premium
@@ -974,6 +966,35 @@
         </section>
         <!-- Section: Design Block -->
     </div>  
+
+    <!-- Form -->
+    <div id="form" class="hidden min-h-screen flex items-center bg-orange-900 bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg fixed inset-0">
+        <div class="w-full">
+            <h2 class="text-center text-white font-bold text-2xl uppercase mb-10">Fill out the  form</h2>
+            <div class="bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2 relative">
+                <i id="close" class="absolute top-3 right-1 fa-lg md:fa-xl fa-solid fa-circle-xmark text-red-600 cursor-pointer"></i>
+                <form method="post" action="process.php" id="paymentForm">
+                <div class="mb-5">
+                    <label for="name" class="block mb-2 font-bold text-gray-600">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" class="border border-gray-300 shadow p-3 w-full rounded text-black" required>
+                </div>
+
+                <div class="mb-5">
+                    <label for="name" class="block mb-2 font-bold text-gray-600">Email</label>
+                    <input type="email" id="email-address" name="email" placeholder="Email Address" class="border border-gray-300 shadow p-3 w-full rounded text-black" required>
+                </div>
+        
+                <div class="mb-5">
+                    <label for="phone" class="block mb-2 font-bold text-gray-600">Phone</label>
+                    <input type="number" id="phone" name="phone" placeholder="Phone Number" class="border border-red-300 shadow p-3 w-full rounded text-black" required >
+                    <p class="text-sm text-red-400 mt-2">Phone Number is required</p>
+                </div>
+        
+                <button class="block w-full background-radial-gradient text-white font-bold p-4 rounded-lg">Submit</button>
+                </form>
+          </div>
+        </div>
+    </div>
 
 
 
